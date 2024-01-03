@@ -35,7 +35,7 @@ Create a form that allows the user to input the necessary data for EMI calculati
 <img src="https://github.com/artichaudhary0/MasterCalculatorAndroid/assets/71622834/eab61910-e027-4e7e-8b8e-6d94fa79adbd" width="200"/>
 
 ### Demo
-https://github.com/artichaudhary0/MasterCalculatorAndroid/assets/71622834/2474e2ae-7d40-4c52-ad32-e9e8efe87db9
+https://github.com/artichaudhary0/EmiCalculator/assets/71622834/94ec642c-0feb-46db-a665-510e2ce9f455
 
 ## Contribution
 We welcome all contributions. Here's how you can help:
