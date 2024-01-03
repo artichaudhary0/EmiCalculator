@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Emi Calculator</string>
+    <string name="emi_image">Emi image</string>
+    <string name="emptyText">---</string>
+    <string name="total_payable_amount">Total Payable Amount</string>
+    <string name="total_interest">Total Interest</string>
+    <string name="total_amount">Total Amount</string>
+    <string name="calculate">Calculate</string>
+    <string name="year">Year</string>
+    <string name="_10">10</string>
+    <string name="time_period_in">Time Period in</string>
+    <string name="interest">Interest</string>
+    <string name="interest_rate">Interest Rate(%)</string>
+    <string name="amount">Amount</string>
+    <string name="loan_amount">Loan Amount</string>
+    <string name="emi_calculator">EMI Calculator</string>
+</resources>

@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/rounder_border"
+        android:backgroundTint="@color/teal_700"
+        >
+
+
+        <TextView
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/inter_semibold"
+            android:textSize="22sp"
+            android:lineHeight="19.36sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="@string/emi_calculator"
+            android:textAlignment="center"
+            app:lineHeight="19.36dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="10dp"
+        android:layout_gravity="start">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="60dp"
+            android:text="@string/loan_amount"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/inter_semibold"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/amount"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/amount"
+            android:textColor="@color/black"
+            android:layout_marginStart="40dp"
+            android:padding="10dp"
+            android:textColorHint="@color/black"
+            android:background="@drawable/rounder_border"
+            android:inputType="number"
+            android:autofillHints="" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="20dp"
+        android:layout_gravity="start">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="65dp"
+            android:text="@string/interest_rate"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/inter_semibold"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/interest"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:hint="@string/interest"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:background="@drawable/rounder_border"
+            android:inputType="number"
+            android:autofillHints="" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="10dp"
+        android:layout_gravity="start">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="30dp"
+            android:text="@string/time_period_in"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/inter_semibold"
+            android:textStyle="bold"
+            />
+
+        <EditText
+            android:id="@+id/year"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/_10"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:background="@drawable/rounder_border"
+            android:inputType="number"
+            android:autofillHints="" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:drawablePadding="40dp"
+            android:fontFamily="@font/inter_semibold"
+            android:text="@string/year"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+
+            app:drawableEndCompat="@drawable/down_arrow" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/calculateEmiValue"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/rounder_border"
+        android:backgroundTint="@color/teal_700"
+        android:elevation="5dp"
+        android:layout_marginVertical="20dp"
+        android:fontFamily="@font/inter_medium"
+        android:gravity="center"
+        android:paddingVertical="5dp"
+        android:text="@string/calculate"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:cornerRadius="12dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="15dp">
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_medium"
+                android:text="@string/total_amount"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:lineHeight="19.36dp" />
+
+            <TextView
+                android:id="@+id/totalAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_medium"
+                android:text="@string/emptyText"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:lineHeight="19.36dp">
+
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_marginStart="20dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_medium"
+                android:text="@string/total_interest"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                app:lineHeight="19.36dp" />
+
+            <TextView
+                android:id="@+id/totalInterest"
+                android:fontFamily="@font/inter_medium"
+                android:text="@string/emptyText"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                app:lineHeight="19.36dp"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                >
+
+            </TextView>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_medium"
+            android:text="@string/total_payable_amount"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            app:lineHeight="19.36dp" />
+
+        <TextView
+            android:id="@+id/totalPayable"
+            android:fontFamily="@font/inter_medium"
+            android:text="@string/emptyText"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            app:lineHeight="19.36dp"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            >
+
+        </TextView>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/emi"
+        android:contentDescription="@string/emi_image" />
+
+
+</LinearLayout>
